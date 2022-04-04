@@ -167,7 +167,7 @@ $(function() {
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>}</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="comment">// kind of boundary condition (for FE space needed)</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">void</span> BoundCondition(<span class="keywordtype">int</span> BdComp, <span class="keywordtype">double</span> t, BoundCond &amp;cond)</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keywordtype">void</span> <a class="code hl_function" href="linear__advection__do__test_8h.html#ab125a8e54b7f3da7564d3fbe99193cdb">BoundCondition</a>(<span class="keywordtype">int</span> BdComp, <span class="keywordtype">double</span> t, BoundCond &amp;cond)</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>{</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="comment">//  cond = NEUMANN;</span></div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
@@ -178,13 +178,13 @@ $(function() {
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>}</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="comment">// value of boundary condition</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordtype">void</span> BoundValue(<span class="keywordtype">int</span> BdComp, <span class="keywordtype">double</span> Param, <span class="keywordtype">double</span> &amp;value)</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span><span class="keywordtype">void</span> <a class="code hl_function" href="linear__advection__do__test_8h.html#a69f59bfe032eb4e2f346de49875679df">BoundValue</a>(<span class="keywordtype">int</span> BdComp, <span class="keywordtype">double</span> Param, <span class="keywordtype">double</span> &amp;value)</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>{</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    value = 0;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>}</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="comment">// initial conditon</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keywordtype">void</span> InitialCondition(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> *values)</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keywordtype">void</span> <a class="code hl_function" href="linear__advection__do__test_8h.html#a4a07ff2a78a740ef813b2f9871b4c081">InitialCondition</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y, <span class="keywordtype">double</span> *values)</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>{</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">double</span> t,val;</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
@@ -212,7 +212,7 @@ $(function() {
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>}</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keywordtype">void</span> BilinearCoeffs(<span class="keywordtype">int</span> n_points, <span class="keywordtype">double</span> *X, <span class="keywordtype">double</span> *Y,</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="keywordtype">void</span> <a class="code hl_function" href="linear__advection__do__test_8h.html#aa85aa164513787b14fb0290de4e5d249">BilinearCoeffs</a>(<span class="keywordtype">int</span> n_points, <span class="keywordtype">double</span> *X, <span class="keywordtype">double</span> *Y,</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <span class="keywordtype">double</span> **parameters, <span class="keywordtype">double</span> **coeffs)</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>{</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  <span class="keywordtype">double</span> eps=1/TDatabase::ParamDB-&gt;PE_NR;</div>
@@ -239,7 +239,7 @@ $(function() {
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>}</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keywordtype">void</span> DO_Mean_Equation_Coefficients(<span class="keywordtype">int</span> n_points, <span class="keywordtype">double</span> *X, <span class="keywordtype">double</span> *Y,</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span><span class="keywordtype">void</span> <a class="code hl_function" href="linear__advection__do__test_8h.html#aa66f42a3e8c10a312575e9c9625d04a6">DO_Mean_Equation_Coefficients</a>(<span class="keywordtype">int</span> n_points, <span class="keywordtype">double</span> *X, <span class="keywordtype">double</span> *Y,</div>
 <div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>                                   <span class="keywordtype">double</span> **parameters, <span class="keywordtype">double</span> **coeffs)</div>
 <div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>{</div>
 <div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordtype">double</span> eps = 1 / TDatabase::ParamDB-&gt;PE_NR;</div>
@@ -265,7 +265,7 @@ $(function() {
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    }</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>}</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keywordtype">void</span> DO_Mode_Equation_Coefficients(<span class="keywordtype">int</span> n_points, <span class="keywordtype">double</span> *X, <span class="keywordtype">double</span> *Y,</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keywordtype">void</span> <a class="code hl_function" href="linear__advection__do__test_8h.html#a2534b5ae022660d22869cd7ae63dd050">DO_Mode_Equation_Coefficients</a>(<span class="keywordtype">int</span> n_points, <span class="keywordtype">double</span> *X, <span class="keywordtype">double</span> *Y,</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                                   <span class="keywordtype">double</span> **parameters, <span class="keywordtype">double</span> **coeffs)</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>{</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordtype">double</span> eps = 1 / TDatabase::ParamDB-&gt;PE_NR;</div>
@@ -349,7 +349,7 @@ $(function() {
 <div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span><span class="comment">// ASSEMBLY FUNCTION</span></div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span><span class="comment">// This fucntion will be called for Every Quadrature Point inside a Cell for Local Assembly</span></div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span><span class="comment">// ======================================================================</span></div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="keywordtype">void</span> DO_Mode_Equation_Assembly(<span class="keywordtype">double</span> quad_wt, <span class="keywordtype">double</span> *coeff, <span class="keywordtype">double</span> *param,</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="keywordtype">void</span> <a class="code hl_function" href="linear__advection__do__test_8h.html#ae021707ba9419a879ef907b753e067a5">DO_Mode_Equation_Assembly</a>(<span class="keywordtype">double</span> quad_wt, <span class="keywordtype">double</span> *coeff, <span class="keywordtype">double</span> *param,</div>
 <div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                               <span class="keywordtype">double</span> hK, <span class="keywordtype">double</span> **derivatives, <span class="keywordtype">int</span> *N_BaseFuncts, <span class="keywordtype">double</span> ***LocMatrices, <span class="keywordtype">double</span> **LocRhs)</div>
 <div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>{</div>
 <div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
@@ -600,7 +600,7 @@ $(function() {
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span>            </div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span>            </div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span> </div>
-<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>            DO_Mode_Equation_Coefficients(N_Points2,X, Y,Param, Coeffs);</div>
+<div class="line"><a id="l00525" name="l00525"></a><span class="lineno">  525</span>            <a class="code hl_function" href="linear__advection__do__test_8h.html#a2534b5ae022660d22869cd7ae63dd050">DO_Mode_Equation_Coefficients</a>(N_Points2,X, Y,Param, Coeffs);</div>
 <div class="line"><a id="l00526" name="l00526"></a><span class="lineno">  526</span>            </div>
 <div class="line"><a id="l00527" name="l00527"></a><span class="lineno">  527</span>            <span class="comment">// INner Quadrature Loop </span></div>
 <div class="line"><a id="l00528" name="l00528"></a><span class="lineno">  528</span>            <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> quadPt = 0 ; quadPt &lt; N_Points2; quadPt++)</div>
@@ -645,7 +645,7 @@ $(function() {
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span> </div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span> </div>
 <div class="line"><a id="l00569" name="l00569"></a><span class="lineno">  569</span> </div>
-<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span><span class="keywordtype">void</span> DO_CoEfficient(TFESpace2D *Fespace, TFEVectFunct2D *FeVector_C_Mode,TFEVectFunct2D* FEVector_Phi, <span class="keywordtype">int</span> N_S, <span class="keywordtype">int</span> i_index,<span class="keywordtype">int</span> N_R)</div>
+<div class="line"><a id="l00570" name="l00570"></a><span class="lineno">  570</span><span class="keywordtype">void</span> <a class="code hl_function" href="linear__advection__do__test_8h.html#a4e1363bd21c1562ebdc2a2e717d06565">DO_CoEfficient</a>(TFESpace2D *Fespace, TFEVectFunct2D *FeVector_C_Mode,TFEVectFunct2D* FEVector_Phi, <span class="keywordtype">int</span> N_S, <span class="keywordtype">int</span> i_index,<span class="keywordtype">int</span> N_R)</div>
 <div class="line"><a id="l00571" name="l00571"></a><span class="lineno">  571</span>{</div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span> </div>
 <div class="line"><a id="l00573" name="l00573"></a><span class="lineno">  573</span>    <span class="keywordtype">int</span> N_Cells = Fespace-&gt;GetN_Cells();</div>
@@ -849,7 +849,7 @@ $(function() {
 <div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span>            }</div>
 <div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span>            </div>
 <div class="line"><a id="l00773" name="l00773"></a><span class="lineno">  773</span> </div>
-<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>            DO_Mode_Equation_Coefficients(N_Points2,X, Y,Param, Coeffs);</div>
+<div class="line"><a id="l00774" name="l00774"></a><span class="lineno">  774</span>            <a class="code hl_function" href="linear__advection__do__test_8h.html#a2534b5ae022660d22869cd7ae63dd050">DO_Mode_Equation_Coefficients</a>(N_Points2,X, Y,Param, Coeffs);</div>
 <div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span>            </div>
 <div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span>            <span class="comment">// INner Quadrature Loop </span></div>
 <div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span>            <span class="keywordflow">for</span> ( <span class="keywordtype">int</span> quadPt = 0 ; quadPt &lt; N_Points2; quadPt++)</div>
@@ -893,8 +893,16 @@ $(function() {
 <div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span> </div>
 <div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span>}</div>
 <div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span> </div>
-<div class="ttc" id="alinear__advection__do__test_8h_html_a95b3fb737c94e5ffcb06c258523d2b94"><div class="ttname"><a href="linear__advection__do__test_8h.html#a95b3fb737c94e5ffcb06c258523d2b94">DO_Mode_RHS</a></div><div class="ttdeci">void DO_Mode_RHS(TFESpace2D *Fespace, TFEVectFunct2D *FeVector_C, int N_S, double *GlobalRhs_mode, int i_index)</div><div class="ttdoc">-— RHS CELL ASSEMBLY LOOP FOR THE MODE EQUATION — ///</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:366</div></div>
-<div class="ttc" id="alinear__advection__do__test_8h_html_aeeed0090e62327af95811c480240e08a"><div class="ttname"><a href="linear__advection__do__test_8h.html#aeeed0090e62327af95811c480240e08a">DO_Mean_Equation_Assembly</a></div><div class="ttdeci">void DO_Mean_Equation_Assembly(double quad_wt, double *coeff, double *param, double hK, double **derivatives, int *N_BaseFuncts, double ***LocMatrices, double **LocRhs)</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:253</div></div>
+<div class="ttc" id="alinear__advection__do__test_8h_html_a2534b5ae022660d22869cd7ae63dd050"><div class="ttname"><a href="linear__advection__do__test_8h.html#a2534b5ae022660d22869cd7ae63dd050">DO_Mode_Equation_Coefficients</a></div><div class="ttdeci">void DO_Mode_Equation_Coefficients(int n_points, double *X, double *Y, double **parameters, double **coeffs)</div><div class="ttdoc">Bilinear Coefficients for the mode equation of linear advection dynamically orthogonal system....</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:288</div></div>
+<div class="ttc" id="alinear__advection__do__test_8h_html_a4a07ff2a78a740ef813b2f9871b4c081"><div class="ttname"><a href="linear__advection__do__test_8h.html#a4a07ff2a78a740ef813b2f9871b4c081">InitialCondition</a></div><div class="ttdeci">void InitialCondition(double x, double y, double *values)</div><div class="ttdoc">Initial Condition for the linear advection problem.</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:154</div></div>
+<div class="ttc" id="alinear__advection__do__test_8h_html_a4e1363bd21c1562ebdc2a2e717d06565"><div class="ttname"><a href="linear__advection__do__test_8h.html#a4e1363bd21c1562ebdc2a2e717d06565">DO_CoEfficient</a></div><div class="ttdeci">void DO_CoEfficient(TFESpace2D *Fespace, TFEVectFunct2D *FeVector_C_Mode, TFEVectFunct2D *FEVector_Phi, int N_S, int i_index, int N_R)</div><div class="ttdoc">Solution routine for ODEs of coefficient equation:</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:722</div></div>
+<div class="ttc" id="alinear__advection__do__test_8h_html_a69f59bfe032eb4e2f346de49875679df"><div class="ttname"><a href="linear__advection__do__test_8h.html#a69f59bfe032eb4e2f346de49875679df">BoundValue</a></div><div class="ttdeci">void BoundValue(int BdComp, double Param, double &amp;value)</div><div class="ttdoc">Value of prescribed boundary conditions for the linear advection problem. For a unit square geometry,...</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:141</div></div>
+<div class="ttc" id="alinear__advection__do__test_8h_html_a95b3fb737c94e5ffcb06c258523d2b94"><div class="ttname"><a href="linear__advection__do__test_8h.html#a95b3fb737c94e5ffcb06c258523d2b94">DO_Mode_RHS</a></div><div class="ttdeci">void DO_Mode_RHS(TFESpace2D *Fespace, TFEVectFunct2D *FeVector_C, int N_S, double *GlobalRhs_mode, int i_index)</div><div class="ttdoc">Assembly of RHS of mode equation:</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:473</div></div>
+<div class="ttc" id="alinear__advection__do__test_8h_html_aa66f42a3e8c10a312575e9c9625d04a6"><div class="ttname"><a href="linear__advection__do__test_8h.html#aa66f42a3e8c10a312575e9c9625d04a6">DO_Mean_Equation_Coefficients</a></div><div class="ttdeci">void DO_Mean_Equation_Coefficients(int n_points, double *X, double *Y, double **parameters, double **coeffs)</div><div class="ttdoc">Bilinear Coefficients for the mean equation of linear advection dynamically orthogonal system....</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:244</div></div>
+<div class="ttc" id="alinear__advection__do__test_8h_html_aa85aa164513787b14fb0290de4e5d249"><div class="ttname"><a href="linear__advection__do__test_8h.html#aa85aa164513787b14fb0290de4e5d249">BilinearCoeffs</a></div><div class="ttdeci">void BilinearCoeffs(int n_points, double *X, double *Y, double **parameters, double **coeffs)</div><div class="ttdoc">Bilinear Coefficients for the linear advection problem. Since the linear advection problem is solved ...</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:199</div></div>
+<div class="ttc" id="alinear__advection__do__test_8h_html_ab125a8e54b7f3da7564d3fbe99193cdb"><div class="ttname"><a href="linear__advection__do__test_8h.html#ab125a8e54b7f3da7564d3fbe99193cdb">BoundCondition</a></div><div class="ttdeci">void BoundCondition(int BdComp, double t, BoundCond &amp;cond)</div><div class="ttdoc">Boundary Conditions for the linear advection problem. For a unit square geometry, using ParMooN's int...</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:119</div></div>
+<div class="ttc" id="alinear__advection__do__test_8h_html_ae021707ba9419a879ef907b753e067a5"><div class="ttname"><a href="linear__advection__do__test_8h.html#ae021707ba9419a879ef907b753e067a5">DO_Mode_Equation_Assembly</a></div><div class="ttdeci">void DO_Mode_Equation_Assembly(double quad_wt, double *coeff, double *param, double hK, double **derivatives, int *N_BaseFuncts, double ***LocMatrices, double **LocRhs)</div><div class="ttdoc">Assembly function for the Mode equation:</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:404</div></div>
+<div class="ttc" id="alinear__advection__do__test_8h_html_aeeed0090e62327af95811c480240e08a"><div class="ttname"><a href="linear__advection__do__test_8h.html#aeeed0090e62327af95811c480240e08a">DO_Mean_Equation_Assembly</a></div><div class="ttdeci">void DO_Mean_Equation_Assembly(double quad_wt, double *coeff, double *param, double hK, double **derivatives, int *N_BaseFuncts, double ***LocMatrices, double **LocRhs)</div><div class="ttdoc">Assembly function for the Mean equation:</div><div class="ttdef"><b>Definition:</b> linear_advection_do_test.h:334</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
